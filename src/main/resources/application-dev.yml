@@ -1,0 +1,12 @@
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.ham.pojo
+  mapper-locations: classpath*:resources/mybatis/*Mapper.xml
+spring:
+  datasource:
+    data-username: root
+    password: roott
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://119.29.225.175:3306/common_mapper?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+    type: com.alibaba.druid.pool.DruidDataSource
